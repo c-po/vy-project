@@ -1,0 +1,11 @@
+/downloads
+/sstate-cache
+/build*/conf/sanity_info
+/build*/bitbake.lock
+/build*/buildhistory
+/build*/cache
+/build*/tmp*
+/build*/package-depends.dot
+/build*/pn-buildlist
+/build*/pn-depends.dot
+/build*/task-depends.dot
