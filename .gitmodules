@@ -1,12 +1,12 @@
 [submodule "sources/poky"]
 	path = sources/poky
-	url = git://git.yoctoproject.org/poky
+	url = https://git.yoctoproject.org/git/poky.git
 [submodule "sources/meta-openembedded"]
 	path = sources/meta-openembedded
-	url = git://git.openembedded.org/meta-openembedded
+	url = https://github.com/openembedded/meta-openembedded.git
 [submodule "sources/meta-vyos"]
 	path = sources/meta-vyos
-	url = git@github.com:c-po/meta-vyos.git
+	url = https://github.com/c-po/meta-vyos.git
 [submodule "sources/meta-swupdate"]
 	path = sources/meta-swupdate
 	url = https://github.com/sbabic/meta-swupdate.git
