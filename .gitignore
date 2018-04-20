@@ -9,3 +9,4 @@
 /build*/pn-buildlist
 /build*/pn-depends.dot
 /build*/task-depends.dot
+/build*/bitbake-cookerdaemon.log
