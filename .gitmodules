@@ -7,3 +7,6 @@
 [submodule "sources/meta-vyos"]
 	path = sources/meta-vyos
 	url = git@github.com:c-po/meta-vyos.git
+[submodule "sources/meta-swupdate"]
+	path = sources/meta-swupdate
+	url = https://github.com/sbabic/meta-swupdate.git
