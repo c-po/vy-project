@@ -48,7 +48,6 @@ _Active branche(s):_
 ```
 
 * **Fedora**
-
 ```
   $ sudo dnf install gawk make wget tar bzip2 gzip python3 unzip perl patch \
     diffutils diffstat git cpp gcc gcc-c++ glibc-devel texinfo chrpath \
@@ -64,7 +63,6 @@ _Active branche(s):_
 ```     
                             
 * **CentOS**
-
 ```
    $ sudo yum install -y epel-release
    $ sudo yum makecache
@@ -75,7 +73,6 @@ _Active branche(s):_
 ```
 
 ### Compile (x86)
-
 ```
   $ git clone -b <branch> --recursive https://github.com/c-po/vy-project.git
 ```
@@ -119,7 +116,7 @@ _Active branche(s):_
  
  During compilation you can get some cups of coffee ...
 
-### Test
+### Test (QEMU)
 As initially stated this is far from an _Alpha_ release. To test the compiled result you can spin up QEMU and login to test.
 
 ```
@@ -156,4 +153,5 @@ As initially stated this is far from an _Alpha_ release. To test the compiled re
     vyos-qemux86 login:
 ```
 
-Please use username `vyos` with password `vyos`
+### Login
+Please use username `vyos` with password `vyos`. This is valid for every build.
