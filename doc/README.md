@@ -269,6 +269,43 @@ Linux ubnt 3.10.20-UBNT #1 SMP Fri Jul 29 17:07:24 PDT 2016 mips64 GNU/Linux
 ```
 
 ```bash
+ubnt@ubnt:~$ cat /proc/cpuinfo
+system type             : UBNT_E200
+machine                 : Unknown
+processor               : 0
+cpu model               : Cavium Octeon II V0.1
+BogoMIPS                : 2000.00
+wait instruction        : yes
+microsecond timers      : yes
+tlb_entries             : 128
+extra interrupt vector  : yes
+hardware watchpoint     : yes, count: 2, address/irw mask: [0x0ffc, 0x0ffb]
+isa                     : mips1 mips2 mips3 mips4 mips5 mips64r2
+ASEs implemented        :
+shadow register sets    : 1
+kscratch registers      : 3
+core                    : 0
+VCED exceptions         : not available
+VCEI exceptions         : not available
+
+processor               : 1
+cpu model               : Cavium Octeon II V0.1
+BogoMIPS                : 2000.00
+wait instruction        : yes
+microsecond timers      : yes
+tlb_entries             : 128
+extra interrupt vector  : yes
+hardware watchpoint     : yes, count: 2, address/irw mask: [0x0ffc, 0x0ffb]
+isa                     : mips1 mips2 mips3 mips4 mips5 mips64r2
+ASEs implemented        :
+shadow register sets    : 1
+kscratch registers      : 3
+core                    : 1
+VCED exceptions         : not available
+VCEI exceptions         : not available
+```
+
+```bash
 ubnt@ubnt:~$ mount
 /dev/root on /root.dev type ext3 (rw,noatime,errors=continue,user_xattr,acl,barrier=1,data=journal)
 unionfs on / type unionfs (rw,noatime,dirs=/root.dev/w=rw:/=ro)
