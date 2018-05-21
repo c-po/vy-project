@@ -1,3 +1,6 @@
+The main intention about this project is porting VyOS to the Ubuquity EdgeRouter
+PRO platform b/c it's a cheap and powerful platform.
+
 # Ubiquity EdgeRouter PRO (ERPro-8)
 
 ## Serial Console
