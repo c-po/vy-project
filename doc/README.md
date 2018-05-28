@@ -306,6 +306,38 @@ VCEI exceptions         : not available
 ```
 
 ```bash
+ubnt@ubnt:~$ lsmod
+Module                  Size  Used by
+iptable_filter          1480  0
+ip_tables              18022  1 iptable_filter
+x_tables               20531  2 ip_tables,iptable_filter
+ip_set_hash_net        22330  4
+ip_set                 23898  1 ip_set_hash_net
+nfnetlink               3997  1 ip_set
+cvm_ipsec_kame         38319  0
+ipv6                  381814  35 cvm_ipsec_kame
+imq                     6736  0
+cavium_ip_offload     173021  0
+octeon3_ethernet       68827  1 cavium_ip_offload
+ptp                     8980  1 octeon3_ethernet
+pps_core                7680  1 ptp
+octeon_bgx_port         7891  1 octeon3_ethernet
+octeon_bgx_nexus        4612  1 octeon_bgx_port
+octeon_common_nexus     1320  1 octeon_bgx_nexus
+ubnt_nf_app            10668  1 cavium_ip_offload
+tdts                  572293  2 cavium_ip_offload,ubnt_nf_app
+octeon_rng              1890  0
+rng_core                4168  2 octeon_rng
+octeon_ethernet        57580  1 cavium_ip_offload
+mdio_octeon             3851  1 octeon_ethernet
+of_mdio                 2982  3 octeon_ethernet,mdio_octeon,octeon_bgx_port
+ethernet_mem            4232  1 octeon_ethernet
+octeon_common           2480  1 octeon_ethernet
+ubnt_platform         118121  0
+libphy                 20647  5 ubnt_platform,octeon_ethernet,mdio_octeon,of_mdio,octeon_bgx_port
+```
+
+```bash
 ubnt@ubnt:~$ mount
 /dev/root on /root.dev type ext3 (rw,noatime,errors=continue,user_xattr,acl,barrier=1,data=journal)
 unionfs on / type unionfs (rw,noatime,dirs=/root.dev/w=rw:/=ro)
