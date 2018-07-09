@@ -422,6 +422,21 @@ drwxr-xr-x    9 root     root          4096 Jan  1  2015 w.o
 drwxr-xr-x    2 www-data root          4096 Jun 19  2011 www
 ```
 
+# DRAM upgrade
+
+DRAM (DDR3 SO-DIMM) can be upgraded to e.g. 8 GiB using a Micron MT16KTF1G64HZ-1G6E1 module.
+
+```bash
+$ uname -a
+Linux ER.mucI 3.10.107-UBNT #1 SMP Thu Apr 26 17:23:18 UTC 2018 mips64 GNU/Linux
+
+$ free -m
+             total       used       free     shared    buffers     cached
+Mem:          7975        188       7786          0         23         88
+-/+ buffers/cache:         76       7899
+Swap:            0          0          0
+```
+
 # Images
 ![Edgerouter Pro 8](images/erpro8_chassis.png)
 ![Edgerouter Pro 8 - Open](images/erpro8_chassis_open.png)
